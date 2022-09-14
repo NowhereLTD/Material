@@ -1,0 +1,31 @@
+@import "../MDC.css";
+@import "../Elevation.css";
+
+:root {
+  --md-button-height: calc(var(--md-u-e) * 40);
+  --md-button-padding: calc(var(--md-u-e) * 24);
+  --md-button-icon: calc(var(--md-u-e) * 18);
+  --md-button-radius: calc(var(--md-u-e) * 20);
+  --md-button-font-size: calc(var(--md-u-e) * 14);
+}
+
+mdc-button {
+  display: inline-flex;
+  width: auto;
+  height: var(--md-button-height);
+  border-radius: var(--md-button-radius);
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--md-elevation-1);
+  user-select: none;
+  font-size: var(--md-button-font-size);
+}
+
+mdc-button > span {
+  padding-left: var(--md-button-padding);
+  padding-right: var(--md-button-padding);
+}
+
+mdc-button:hover {
+  box-shadow: var(--md-elevation-2);
+}
